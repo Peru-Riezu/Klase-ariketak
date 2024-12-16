@@ -5,7 +5,7 @@ const PORT = 80;
 
 // Function to get the output of the fortune command
 function getFortune(callback) {
-	exec('/usr/games/fortune /usr/share/games/fortunes/es/', (error, stdout) => {
+	exec('/usr/games/fortune', (error, stdout) => {
 		callback(stdout);
 	});
 }
